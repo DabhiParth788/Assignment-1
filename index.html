@@ -9,20 +9,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="h-fit w-fit flex flex-col items-center">
+<body class="h-fit w-screen flex flex-col items-center">
 
     <!-- Home page -->
-    <div id="homePage" class=" w-fit min-h-fit h-screen mb-8">
+    <div id="homePage" class="relative w-fit min-h-fit h-screen mb-8 ">
 
         
-        <div class="flex justify-between w-screen min-w-fit h-24 px-[8%] z-10">
+        <div class="flex justify-between w-screen min-w-fit h-24 px-[8%] z-10 ">
             <div class="text-7xl  w-80 "><img src="assets/logo-1 1.png" alt="Logo" srcset=""></div>
             <div class="flex  w-68 justify-between items-center ">
                 <a href="#aboutUs" class="flex-initial w-28 hover:text-cyan-500">About Us</a>
                 <a href="#services" class="flex-initial w-28 hover:text-cyan-500">Services</a>
-                <a href="#" class="flex-initial w-28 hover:text-cyan-500">Team</a>
-                <a href="#" class="flex-initial w-28 hover:text-cyan-500">Clients</a>
-                <a href="#" class="flex-initial w-28 hover:text-cyan-500">Contact Us</a>
+                <a href="#ourTeam" class="flex-initial w-28 hover:text-cyan-500">Team</a>
+                <a href="#ourClients" class="flex-initial w-28 hover:text-cyan-500">Clients</a>
+                <a href="#contactUs" class="flex-initial w-28 hover:text-cyan-500">Contact Us</a>
             </div>
         </div>
         <img class="absolute top-0 left-0 -z-50" src="assets/Asset 1.png" alt="">
@@ -42,21 +42,21 @@
     </div>
 
     <!-- About Us -->
-    <div id="aboutUs" class="relative w-fit h-fit flex py-4">
-        <div class=" w-[43%] h-[475px] mt-[4%]">
+    <div id="aboutUs" class="relative w-fit h-fit flex py-4 px-12 ">
+        <div class=" w-[50%] h-[475px] mt-[4%] ">
             <img src="assets/about us 1.png" alt="">
         </div>
         
-        <div class=" w-[43%] h-[50%] mt-[4%] flex flex-col gap-4">
+        <div class=" w-[50%] h-[50%] mt-[4%] flex flex-col gap-4 ">
             <div>
-                <!-- content 1 -->
+
                 <div class="font-medium text-4xl leading-[56px]">ABOUT US</div>
                 <div class="font-normal text-lg leading-7 text-[#2C2C2C]">
                   We love what we do and are driven by achieving great results for our clients. Our awards and impressive client list are testament to our high-quality approach. We deliver value, creativity, results, and exceptional levels of customer service and professionalism. We specialize in infrastructure development, energy, and natural resources.
                 </div>
             </div>              
             <div class="flex gap-16">
-                <!-- content 2 -->
+
                 <div class="flex flex-col gap-4">
                     <div class="size-11 "><img src="assets/Enagagement icon 1.png" alt=""></div>
                     <div class="font-medium text-2xl leading-7">Engagemen</div>
@@ -71,7 +71,7 @@
         </div>
     </div>
 
-<!-- Services -->
+    <!-- Services -->
     <div id="services" class="relative  w-screen min-w-fit h-fit  py-4 flex flex-col items-center justify-between gap-8">
 
         <img class="absolute -top-16 left-0 -z-50" src="assets/Asset 5 2.png" alt="">
@@ -133,6 +133,102 @@
         
     </div>
 
+    <!-- Our Team -->
+    <div id="ourTeam" class="relative w-screen min-w-fit h-fit  py-4 flex flex-col items-center justify-between gap-8 mt-36 mb-28">
+
+        <img class="absolute -top-48 left-0 -z-50" src="assets/Asset 5 2.png" alt="">
+        <img class="absolute -bottom-80 right-0 -z-50" src="assets/Asset 8 2.png" alt="">
+
+        <div class="font-medium text-[48px] leading-[56.88px]">Our Team</div>
+        
+        <div class="flex items-center justify-between gap-36">
+
+            <div class="flex flex-col items-center gap-8">
+                <img class="" src="assets/Person 1 img 1.png" alt="">
+                <h3 class="font-normal text-xl leading-[28.44px]">Jessica D'suza</h3>
+            </div>
+            <div class="flex flex-col items-center gap-8">
+                <img class="" src="assets/Person 2 img 1.png" alt="">
+                <h3 class="font-normal text-xl leading-[28.44px]">Johny Williams</h3>
+            </div>
+            <div class="flex flex-col items-center gap-8">
+                <img class="" src="assets/Person 3 img 1.png" alt="">
+                <h3 class="font-normal text-xl leading-[28.44px]">Sanya R,</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Our Projects  -->
+    <div id="ourProject" class="relative w-screen h-fit flex flex-col gap-8 items-center mb-28">
+
+        <div class="font-medium text-[48px] leading-[56px]">Our Projects</div>
+        <div class="flex gap-4">
+            <div><img src="assets/Our Project_ 1 img 1.png" alt=""></div>
+            <div class=" flex flex-col gap-4">
+                <div><img src="assets/Our Project _ 2 img 1.png" alt=""></div>
+                <div><img src="assets/Our Project_ 3 img 1.png" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Our Clients -->
+    <div id="ourClients" class="relative flex flex-col items-center gap-16  w-screen">
+        <img class="absolute -top-36 left-0 -z-50" src="assets/Assets 9 1.png" alt="">
+
+        <div class="font-medium text-[48px] leading-[56px]">Our Clients</div>
+
+        <div class="flex items-center gap-12">
+
+            <div><img class="" src="assets/Layer 19.png" alt=""></div>
+            <div><img class="" src="assets/Layer 20.png" alt=""></div>
+            <div><img class="" src="assets/1280px-Brigitte-Logo-2.png" alt=""></div>
+            <div><img class="" src="assets/Layer 22.png" alt=""></div>
+            <div><img class="" src="assets/BHP_2017_logo.png" alt=""></div>
+        </div>
+        
+        <div class="flex items-center gap-12">
+            <div><img class="" src="assets/Layer 21.png" alt=""></div>
+            <div><img class="" src="assets/Layer 23.png" alt=""></div>
+            <div><img class="" src="assets/Layer 24.png" alt=""></div>
+            <div><img class="" src="assets/MelbourneWaterLogo-1024x282.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div id="contactUs" class="mt-20">
+        <div class="bg-[#BFDBFF] flex pt-8 justify-around gap-12 w-[1340px] h-[208px] text-sm leading-7">
+            <div class="flex flex-col">
+                <p class="text-base font-bold leading-9">Social</p>
+                <a href="" class="flex items-center relative hover:text-white">Facebook <img class="absolute -left-6 size-4 rounded-md" src="assets/facebook 1.png" alt=""> </a>
+                <a href="" class="flex items-center relative hover:text-white">Linkedin <img class="absolute -left-6 size-4 rounded-md" src="assets/linkedin 1.png" alt=""> </a>
+                <a href="" class="flex items-center relative hover:text-white">Google + <img class="absolute -left-6 size-4 rounded-md" src="assets/search 1.png" alt=""> </a>
+            </div>
+            <div class="flex flex-col ">
+                <p class="text-base font-bold leading-9 ">Explore</p>
+                <a href="" class="hover:text-white">Services</a>
+                <a href="" class="hover:text-white">Team</a>
+                <a href="" class="hover:text-white">Clients</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-base font-bold leading-9">Contact</p>
+                <a href="" class="hover:text-white">Idk anyone will read</a>
+                <a href="" class="hover:text-white">this gibrish address</a>
+                <a href="" class="hover:text-white">1234567890</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-base font-bold leading-9">Email</p>
+                <a href="" class="hover:text-white">assignment1@email.com</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Coppyrights  -->
+    <div class="h-12 w-screen flex items-center justify-center">
+        © Copyright 2018 Mendleson Communication Pty Ltd 
+    </div>
 
       <!-- Responsive Debug Box -->
     <div class="absolute bottom-4 right-4 p-2 rounded-md text-white font-semibold text-xs sm:text-sm md:text-base lg:text-lg">
