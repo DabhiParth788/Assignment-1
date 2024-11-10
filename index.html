@@ -9,32 +9,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="h-fit w-screen flex flex-col items-center">
+<body class="h-fit w-full flex flex-col items-center overflow-x-hidden max-w-full">
+
+
+    <!-- Navigation bar -->
+    <div class="relative flex flex-col lg:flex-row justify-between w-full h-24 min-h-fit items-center px-[8%] z-10 mb-12 lg:mb-4">
+        <div class="text-7xl  w-80 "><img src="assets/logo-1 1.png" alt="Logo" srcset=""></div>
+        <div class="flex  w-68 justify-between items-center ">
+            <a href="#aboutUs" class="flex-initial w-28 hover:text-cyan-500">About Us</a>
+            <a href="#services" class="flex-initial w-28 hover:text-cyan-500">Services</a>
+            <a href="#ourTeam" class="flex-initial w-28 hover:text-cyan-500">Team</a>
+            <a href="#ourClients" class="flex-initial w-28 hover:text-cyan-500">Clients</a>
+            <a href="#contactUs" class="flex-initial w-28 hover:text-cyan-500">Contact Us</a>
+        </div>
+        <img class="absolute top-0 left-0 -z-50 w-[3rem] sm:w-[4rem] md:w-[5rem] lg:w-[6rem] xl:w-[7rem]  transition-all duration-300 ease-in-out  " src="assets/Asset 1.png" alt="">
+        <img class="absolute top-0 right-0 -z-50 w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem]  transition-all duration-300 ease-in-out  " src="assets/Asset 2.png" alt="">
+    </div>
 
     <!-- Home page -->
-    <div id="homePage" class="relative w-fit min-h-fit h-screen mb-8 ">
+    <div id="homePage" class="relative w-full min-h-fit h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[750px] max-h-[850px] mb-8 ">
 
+        <img class="absolute -bottom-16 left-0 -z-40  w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem]  transition-all duration-300 ease-in-out  " src="assets/Assets 3.png" alt="">
+        <img class="absolute -bottom-16 right-0 -z-50  w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem]  transition-all duration-300 ease-in-out  " src="assets/Assets 4.png" alt="">
         
-        <div class="flex justify-between w-screen min-w-fit h-24 px-[8%] z-10 ">
-            <div class="text-7xl  w-80 "><img src="assets/logo-1 1.png" alt="Logo" srcset=""></div>
-            <div class="flex  w-68 justify-between items-center ">
-                <a href="#aboutUs" class="flex-initial w-28 hover:text-cyan-500">About Us</a>
-                <a href="#services" class="flex-initial w-28 hover:text-cyan-500">Services</a>
-                <a href="#ourTeam" class="flex-initial w-28 hover:text-cyan-500">Team</a>
-                <a href="#ourClients" class="flex-initial w-28 hover:text-cyan-500">Clients</a>
-                <a href="#contactUs" class="flex-initial w-28 hover:text-cyan-500">Contact Us</a>
-            </div>
-        </div>
-        <img class="absolute top-0 left-0 -z-50" src="assets/Asset 1.png" alt="">
-        <img class="absolute top-0 right-0 -z-50" src="assets/Asset 2.png" alt="">
-        <img class="absolute -bottom-8 left-0 -z-40" src="assets/Assets 3.png" alt="">
-        <img class="absolute -bottom-8 right-0 -z-50" src="assets/Assets 4.png" alt="">
-        
-        <img class="absolute -bottom-8 left-0 -z-50" src="assets/Graphic 1 2.png" alt="">
-        <img class="absolute -bottom-8 left-36 -z-20" src="assets/Vector Smart Object21 1.png" alt="">
+        <img class="absolute -bottom-16 left-0 -z-50  " src="assets/Graphic 1 2.png" alt="">
+        <!-- <img class="absolute -bottom-8 left-36 -z-20   w-fit" src="assets/Vector Smart Object21 1.png" alt=""> -->
+        <img class="absolute -bottom-16 left-8 sm:left-16 md:left-20 lg:left-28 xl:left-36 -z-20   w-[15rem] sm:w-[20rem] md:w-[25rem] lg:w-[30rem] xl:w-[41rem]  transition-all duration-300 ease-in-out" src="assets/Vector Smart Object21 1.png" alt="">
+    
 
-        <div class="w-[500px] flex flex-col justify-between gap-[15px] mt-[5%] ml-[50%] ">
-            <div class="text-6xl leading-[66px] font-medium ">Mendleson Communication and Engagement</div>
+
+        <div class=" flex flex-col justify-between gap-[15px] mt-[5%] ml-[30%] md:ml-[50%] mr-[2rem]  transition-all duration-1000 ease-in-out ">
+            <div class="text-xl sm:text-2xl md:text-4xl lg:text-6xl lg:leading-[66px] leading-[33px] font-medium ">Mendleson Communication and Engagement</div>
             <div class="font-normal text-lg leading-7 text-[#2C2C2C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sed ipsum, ut quam volutpat, tortor.</div>
         </div>
         
@@ -42,12 +47,12 @@
     </div>
 
     <!-- About Us -->
-    <div id="aboutUs" class="relative w-fit h-fit flex py-4 px-12 ">
-        <div class=" w-[50%] h-[475px] mt-[4%] ">
-            <img src="assets/about us 1.png" alt="">
+    <!-- <div id="aboutUs" class="relative w-fit h-fit flex py-4 px-12 border-neutral-950 border-4">
+        <div class=" w-[50%] h-[475px] mt-[4%] border-neutral-800 border-2">
+            <img class=" border-neutral-400 border-2" src="assets/about us 1.png" alt="">
         </div>
         
-        <div class=" w-[50%] h-[50%] mt-[4%] flex flex-col gap-4 ">
+        <div class=" w-[50%] h-[50%] mt-[4%] flex flex-col gap-4 border-neutral-800 border-2">
             <div>
 
                 <div class="font-medium text-4xl leading-[56px]">ABOUT US</div>
@@ -58,41 +63,41 @@
             <div class="flex gap-16">
 
                 <div class="flex flex-col gap-4">
-                    <div class="size-11 "><img src="assets/Enagagement icon 1.png" alt=""></div>
+                    <div class="size-11  border-neutral-400 border-2"><img src="assets/Enagagement icon 1.png" alt=""></div>
                     <div class="font-medium text-2xl leading-7">Engagemen</div>
                     <div class="font-normal text-lg leading-7 text-[#2C2C2C]">We are engagement specialists, who have led projects at all levels of the IAP2 spectrum.<span>READ MORE</span></div>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <div class="size-11 "><img src="assets/coomunication icon 1.png" alt=""></div>
+                    <div class="size-11  border-neutral-400 border-2"><img src="assets/coomunication icon 1.png" alt=""></div>
                     <div class="font-medium text-2xl leading-7">Communications</div>
                     <div class="font-normal text-lg leading-7 text-[#2C2C2C]">We are award-winning leaders in communications and campaign management.<span>READ MORE</span></div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Services -->
-    <div id="services" class="relative  w-screen min-w-fit h-fit  py-4 flex flex-col items-center justify-between gap-8">
+    <!-- <div id="services" class="relative  w-full min-w-fit h-fit  py-4 flex flex-col items-center justify-between gap-8 border-neutral-950 border-4">
 
-        <img class="absolute -top-16 left-0 -z-50" src="assets/Asset 5 2.png" alt="">
-        <img class="absolute right-0 top-[32rem] -z-50" src="assets/Asset 6 1.png" alt="">
-        <img class="absolute left-0 top-[60rem] -z-50" src="assets/Asset 7 1.png" alt="">
-        <img class="absolute right-0 top-[83rem] -z-50" src="assets/Asset 8 2.png" alt="">
+        <img class="absolute -top-16 left-0 -z-50 border-neutral-400 border-2" src="assets/Asset 5 2.png" alt="">
+        <img class="absolute right-0 top-[32rem] -z-50 border-neutral-400 border-2" src="assets/Asset 6 1.png" alt="">
+        <img class="absolute left-0 top-[60rem] -z-50 border-neutral-400 border-2" src="assets/Asset 7 1.png" alt="">
+        <img class="absolute right-0 top-[83rem] -z-50 border-neutral-400 border-2" src="assets/Asset 8 2.png" alt="">
 
-        <div class="font-medium text-[48px] leading-[56.88px]">Services</div>
+        <div class="font-medium text-[48px] leading-[56.88px] border-neutral-800 border-2">Services</div>
 
-        <div class="flex gap-16 items-center justify-between text-[#2C2C2C]">
+        <div class="flex gap-16 items-center justify-between text-[#2C2C2C] border-neutral-800 border-2">
             <div class="flex gap-16 flex-col w-[529px] h-fit">
                 <div class="font-medium text-5xl leading-[50px] text-right">Engagement</div>
                 <div class="font-normal text-base leading-6 text-right">We love what we do and are driven by achieving great results for our clients. Our awards and impressive client list are testament to our high quality approach. We deliver value, creaKvity, results and excepKonal levels of customer service and professionalism. We specialise in infrastructure development, energy and natural resources.</div>
             </div>
-            <div class="flex-initial w-[450px] ">
+            <div class="flex-initial w-[450px]  border-neutral-400 border-2">
                 <img src="assets/Engagement vector 1.png" alt="">
             </div>
         </div>
 
-        <div class="flex gap-16 items-center justify-between text-[#2C2C2C]">
-            <div class="flex-initial  w-[450px]">
+        <div class="flex gap-16 items-center justify-between text-[#2C2C2C] border-neutral-800 border-2">
+            <div class="flex-initial  w-[450px] border-neutral-400 border-2">
                 <img src="assets/Coominucation vector 1.png" alt="">
             </div>
             <div class="flex gap-16 flex-col w-[529px] h-fit ">
@@ -101,18 +106,18 @@
             </div>
         </div>
 
-        <div class="flex gap-16 items-center justify-between text-[#2C2C2C]">
+        <div class="flex gap-16 items-center justify-between text-[#2C2C2C] border-neutral-800 border-2">
             <div class="flex gap-16 flex-col w-[529px] h-fit">
                 <div class="font-medium text-5xl leading-[50px] text-right">Facilitation</div>
                 <div class="font-normal text-base leading-6 text-right">We love what we do and are driven by achieving great results for our clients. Our awards and impressive client list are testament to our high quality approach. We deliver value, creaKvity, results and excepKonal levels of customer service and professionalism. We specialise in infrastructure development, energy and natural resources.</div>
             </div>
-            <div class="flex-initial bg-blue-500 w-[450px] ">
+            <div class="flex-initial bg-blue-500 w-[450px] border-neutral-400 border-2 ">
                 <img src="assets/facilation vector 1.png" alt="">
             </div>
         </div>
 
-        <div class="flex gap-16 items-center justify-between text-[#2C2C2C]">
-            <div class="flex-initial  w-[450px]">
+        <div class="flex gap-16 items-center justify-between text-[#2C2C2C] border-neutral-800 border-2">
+            <div class="flex-initial  w-[450px] border-neutral-400 border-2">
                 <img src="assets/Consultation vector 1.png" alt="">
             </div>
             <div class="flex gap-16 flex-col w-[529px] h-fit ">
@@ -121,49 +126,49 @@
             </div>
         </div>
 
-        <div class="flex gap-16 items-center justify-between text-[#2C2C2C]">
+        <div class="flex gap-16 items-center justify-between text-[#2C2C2C] border-neutral-800 border-2">
             <div class="flex gap-16 flex-col w-[529px] h-fit">
                 <div class="font-medium text-5xl leading-[50px] text-right">Traning & mentoring</div>
                 <div class="font-normal text-base leading-6 text-right">We love what we do and are driven by achieving great results for our clients. Our awards and impressive client list are testament to our high quality approach. We deliver value, creaKvity, results and excepKonal levels of customer service and professionalism. We specialise in infrastructure development, energy and natural resources.</div>
             </div>
-            <div class="flex-initial bg-blue-500 w-[450px] ">
+            <div class="flex-initial bg-blue-500 w-[450px]  border-neutral-400 border-2">
                 <img src="assets/Training and vector 1.png" alt="">
             </div>
         </div>
         
-    </div>
+    </div> -->
 
     <!-- Our Team -->
-    <div id="ourTeam" class="relative w-screen min-w-fit h-fit  py-4 flex flex-col items-center justify-between gap-8 mt-36 mb-28">
+    <!-- <div id="ourTeam" class="relative w-full min-w-full h-fit  py-4 flex flex-col items-center justify-between gap-8 mt-36 mb-28 border-neutral-950 border-4">
 
-        <img class="absolute -top-48 left-0 -z-50" src="assets/Asset 5 2.png" alt="">
-        <img class="absolute -bottom-80 right-0 -z-50" src="assets/Asset 8 2.png" alt="">
+        <img class="absolute -top-48 left-0 -z-50 border-neutral-400 border-2" src="assets/Asset 5 2.png" alt="">
+        <img class="absolute -bottom-80 right-0 -z-50 border-neutral-400 border-2" src="assets/Asset 8 2.png" alt="">
 
-        <div class="font-medium text-[48px] leading-[56.88px]">Our Team</div>
+        <div class="font-medium text-[48px] leading-[56.88px] border-neutral-800 border-2">Our Team</div>
         
-        <div class="flex items-center justify-between gap-36">
+        <div class="flex items-center justify-between gap-36 border-neutral-800 border-2">
 
             <div class="flex flex-col items-center gap-8">
-                <img class="" src="assets/Person 1 img 1.png" alt="">
+                <img class=" border-neutral-400 border-2" src="assets/Person 1 img 1.png" alt="">
                 <h3 class="font-normal text-xl leading-[28.44px]">Jessica D'suza</h3>
             </div>
             <div class="flex flex-col items-center gap-8">
-                <img class="" src="assets/Person 2 img 1.png" alt="">
+                <img class=" border-neutral-400 border-2" src="assets/Person 2 img 1.png" alt="">
                 <h3 class="font-normal text-xl leading-[28.44px]">Johny Williams</h3>
             </div>
             <div class="flex flex-col items-center gap-8">
-                <img class="" src="assets/Person 3 img 1.png" alt="">
+                <img class=" border-neutral-400 border-2" src="assets/Person 3 img 1.png" alt="">
                 <h3 class="font-normal text-xl leading-[28.44px]">Sanya R,</h3>
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- Our Projects  -->
-    <div id="ourProject" class="relative w-screen h-fit flex flex-col gap-8 items-center mb-28">
+    <!-- <div id="ourProject" class="relative w-full h-fit flex flex-col gap-8 items-center mb-28 border-neutral-950 border-4">
 
-        <div class="font-medium text-[48px] leading-[56px]">Our Projects</div>
-        <div class="flex gap-4">
+        <div class="font-medium text-[48px] leading-[56px] border-neutral-800 border-2">Our Projects</div>
+        <div class="flex gap-4 border-neutral-800 border-2">
             <div><img src="assets/Our Project_ 1 img 1.png" alt=""></div>
             <div class=" flex flex-col gap-4">
                 <div><img src="assets/Our Project _ 2 img 1.png" alt=""></div>
@@ -171,15 +176,15 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     <!-- Our Clients -->
-    <div id="ourClients" class="relative flex flex-col items-center gap-16  w-screen">
-        <img class="absolute -top-36 left-0 -z-50" src="assets/Assets 9 1.png" alt="">
+    <!-- <div id="ourClients" class="relative flex flex-col items-center gap-16  w-full border-neutral-950 border-4">
+        <img class="absolute -top-36 left-0 -z-50 border-neutral-400 border-2" src="assets/Assets 9 1.png" alt="">
 
-        <div class="font-medium text-[48px] leading-[56px]">Our Clients</div>
+        <div class="font-medium text-5xl leading-[56px]">Our Clients</div>
 
-        <div class="flex items-center gap-12">
+        <div class="flex items-center gap-12 border-neutral-800 border-2">
 
             <div><img class="" src="assets/Layer 19.png" alt=""></div>
             <div><img class="" src="assets/Layer 20.png" alt=""></div>
@@ -188,22 +193,22 @@
             <div><img class="" src="assets/BHP_2017_logo.png" alt=""></div>
         </div>
         
-        <div class="flex items-center gap-12">
+        <div class="flex items-center gap-12 border-neutral-800 border-2">
             <div><img class="" src="assets/Layer 21.png" alt=""></div>
             <div><img class="" src="assets/Layer 23.png" alt=""></div>
             <div><img class="" src="assets/Layer 24.png" alt=""></div>
             <div><img class="" src="assets/MelbourneWaterLogo-1024x282.png" alt=""></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Contact Us -->
-    <div id="contactUs" class="mt-20">
-        <div class="bg-[#BFDBFF] flex pt-8 justify-around gap-12 w-[1340px] h-[208px] text-sm leading-7">
+    <!-- <div id="contactUs" class="mt-20 w-full flex justify-center border-neutral-950 border-4">
+        <div class="bg-[#BFDBFF] flex pt-8 justify-around gap-12 w-[1340px] h-[208px] text-sm leading-7 border-neutral-800 border-2">
             <div class="flex flex-col">
                 <p class="text-base font-bold leading-9">Social</p>
-                <a href="" class="flex items-center relative hover:text-white">Facebook <img class="absolute -left-6 size-4 rounded-md" src="assets/facebook 1.png" alt=""> </a>
-                <a href="" class="flex items-center relative hover:text-white">Linkedin <img class="absolute -left-6 size-4 rounded-md" src="assets/linkedin 1.png" alt=""> </a>
-                <a href="" class="flex items-center relative hover:text-white">Google + <img class="absolute -left-6 size-4 rounded-md" src="assets/search 1.png" alt=""> </a>
+                <a href="" class="flex items-center relative hover:text-white">Facebook <img class="absolute -left-6 size-4 rounded-md border-neutral-400 border-2" src="assets/facebook 1.png" alt=""> </a>
+                <a href="" class="flex items-center relative hover:text-white">Linkedin <img class="absolute -left-6 size-4 rounded-md border-neutral-400 border-2" src="assets/linkedin 1.png" alt=""> </a>
+                <a href="" class="flex items-center relative hover:text-white">Google + <img class="absolute -left-6 size-4 rounded-md border-neutral-400 border-2" src="assets/search 1.png" alt=""> </a>
             </div>
             <div class="flex flex-col ">
                 <p class="text-base font-bold leading-9 ">Explore</p>
@@ -222,13 +227,13 @@
                 <a href="" class="hover:text-white">assignment1@email.com</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Coppyrights  -->
-    <div class="h-12 w-screen flex items-center justify-center">
+    <!-- <div class="h-12 w-full flex items-center justify-center border-neutral-950 border-4">
         © Copyright 2018 Mendleson Communication Pty Ltd 
-    </div>
+    </div> -->
 
       <!-- Responsive Debug Box -->
     <div class="absolute bottom-4 right-4 p-2 rounded-md text-white font-semibold text-xs sm:text-sm md:text-base lg:text-lg">
@@ -241,5 +246,6 @@
             <span class="hidden 2xl:inline">Extra Large PC</span>
         </div>
   </div>
+  
 </body>
 </html>
